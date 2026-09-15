@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Clark Kent</title>
+
+    <style>
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #0d47a1;
+        color: white;
+        text-align: center;
+        padding: 3rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      nav {
+        background-color: #ffcc00;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        color: #0a192f;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #0d47a1;
+      }
+
+      main {
+        width: 90%;
+        max-width: 1200px;
+        margin: 30px auto;
+      }
+
+      .destaque {
+        background-color: #ffffff;
+        padding: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .cards {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+      }
+
+      .card {
+        flex: 1;
+        background-color: #1565c0;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h2 {
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+      }
+
+      
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-top: 10px;
+      }
+
+      footer {
+        background-color: #0a192f;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 1rem;
+        margin-top: 40px;
+      }
+
+     
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .cards {
+          flex-direction: column;
+        }
+
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Clark Kent</h1>
+      <p>Uma wiki dedicada à história do Homem de Aço</p>
+    </header>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <main>
+      <section class="destaque">
+        <h2>Bem-vindo!</h2>
+        <p>Um site de inspiração sobre a trajetória de Clark Kent.</p>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <div>
+            <h2>Origem</h2>
+            <p>
+              Clark veio de Krypton (Kal-El) e foi criado pelos fazendeiros Jonathan e Martha Kent em Smallville, Kansas. Trabalha como jornalista no Escada do Planeta.
+            </p>
+          </div>
+          <img
+            src="https://media1.tenor.com/m/DbVwupJKB2cAAAAd/clark-kent-tom-welling.gif"
+            alt="Clark Kent em Smallville"width="730px"height="900px"
+          />
+        </div>
+
+        <div class="card">
+          <div>
+            <h2>Poderes e Fraquezas</h2>
+            <p>
+              Possui superforça, visão de raio-X, visão de calor e supervelocidade. Sua principal fraqueza é a Kryptonita verde e vulnerabilidade à magia.
+            </p>
+          </div>
+          <img
+            src="https://media1.tenor.com/m/jpdSg5XzT0kAAAAd/smallville-clark-kent.gif"
+            alt="Clark Kent usando seus poderes" width="730px"height="900px"
+          />
+        </div>
+
+        <div class="card">
+          <div>
+            <h2>Relações Importantes</h2>
+            <p>
+              Destaque para sua relação complexa com Lex Luthor, o romance com Lois Lane e Lana Lang, e suas alianças com a Liga da Justiça.
+            </p>
+          </div>
+          <img
+            src="https://media1.tenor.com/m/gwMntkDcyx0AAAAC/clark-kent-lois-lane.gif"
+            alt="Clark Kent e Lois Lane"width="730px"height="900px"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>Meu site leo torres 2026 </footer>
+  </body>
+</html>
